@@ -1,0 +1,45 @@
+<html> 
+  <head>
+     <script type="text/javascript"> 
+        function show_prompt()
+        {
+            var m = prompt("Podaj liczbe: ");
+
+            
+
+            var wynik;
+            var m1 = parseInt(m) + 1;
+            var m2 = parseInt(m) * (m1 + 1);
+            var m3 = m1 * (m1 + 1);
+
+
+            wynik = "Wynik: 1/" +m1+ " + 1/" +m2+ " + 1/" +m3;
+
+            document.write("wynik to: " +wynik);
+        }
+
+        function show_prompt2()
+        {
+            var m = prompt("Podaj liczbe: ");
+
+            
+
+            var wynik;
+            var m1 = parseInt(m) + 1;
+            var m2 = parseInt(m) * (parseInt(m) + 1);
+
+
+            wynik = "Wynik: 1/" +m1+ " + 1/" +m2;
+
+            document.write("wynik to: " +wynik);
+        }
+     </script> 
+</head> 
+<body>  
+
+    <input type="button" onclick="show_prompt()" value="Trzy ułamki" /> <br>
+    <input type="button" onclick="show_prompt2()" value="Dwa ułamki takie same" />
+
+</body> 
+</html>   
+ 
