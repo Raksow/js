@@ -1,0 +1,25 @@
+<html> 
+  <head>
+     <script type="text/javascript"> 
+       function show_prompt() 
+       {
+        var a = prompt("Podaj liczbe A: ")
+        var b = prompt("Podaj liczbe B: ")
+
+        var wynik = 0;
+        var wynik1 = a*a*a;
+        var wynik2 = 3 * a * a * b;
+        var wynik3 = 3 * a * b * b;
+        var wynik4 = b * b * b;
+
+        wynik = (parseInt(a) + parseInt(b))*(parseInt(a) + parseInt(b))*(parseInt(a) + parseInt(b));
+
+
+        document.write("(" +a+ " + " +b+ ")^3 = " +a+ "^3 + 3*((" +a+")^2) * (" +b+ ") + 3 * (" +a+ ") * ((" +b+ ")^2) + " +b+ "^3 = " +wynik1+ " + " +wynik2+ " + " +wynik3+ " + " +wynik4+ " = " +wynik);
+       } 
+        </script> 
+</head> 
+    <body>  
+        <input type="button" onclick="show_prompt()" value="Pokaż prompt box" />
+    </body> 
+</html>
