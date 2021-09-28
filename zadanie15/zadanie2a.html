@@ -1,0 +1,56 @@
+<html> 
+<head> 
+<title>
+  Przykład obliczenia V  i  Pc walca
+</title>
+    <script language="JavaScript">
+        function Funkcja()
+        {
+            var a = prompt("Podaj liczbę x1: ");
+            var b = prompt("Podaj liczbę x2: ");
+            var y = 0;
+
+            document.write("x1 = " +a+ " x2 = " +b);
+
+            y = 3 * Math.pow(a, 5/7);
+            
+            document.write("<br>wynik = " +y);
+        }
+
+        function Funkcja2()
+        {
+            var a = prompt("Podaj liczbę x1: ");
+            var b = prompt("Podaj liczbę x2: ");
+            var y = 0;
+
+            document.write("x1 = " +a+ " x2 = " +b);
+
+            a *= 0.01745; 
+            document.write("<br>x1 w radianach = " +a);
+
+            y = 2 * Math.cos(a) + 2 * Math.sin(a);
+
+            document.write("<br>Wynik = " +y);
+        }
+
+        function Funkcja3()
+        {
+            var a = prompt("Podaj liczbę x1: ");
+            var b = prompt("Podaj liczbę x2: ");
+            var y = 0;
+
+            document.write("x1 = " +a+ " x2 = " +b);
+
+            y = Math.sqrt(Math.sqrt(Math.pow(a, 5) + 2 * Math.pow(b, 4))) * Math.abs(a - b);
+
+            document.write("<br>Wynik = " +y);
+
+        }
+    </script>
+</head> 
+<body>
+    <input type="button" onclick="Funkcja()" value="OBLICZ1" />  
+    <input type="button" onclick="Funkcja2()" value="OBLICZ2" /> 
+    <input type="button" onclick="Funkcja3()" value="OBLICZ3" />  
+</body> 
+</html>
