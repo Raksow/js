@@ -1,0 +1,49 @@
+<html> 
+<head> 
+<title>
+  Przykład
+</title>
+    <script language="JavaScript">
+        function PoleiObwod()
+        {
+            var a = prompt("Podaj bok a: ");
+            var b = prompt("Podaj bok b: ");
+            var h = prompt("Podaj wysokosc: ");
+
+            a = parseInt(a);
+            b = parseInt(b);
+            h = parseInt(h);
+
+            var a_tro = parseInt((a - b)/2);
+
+            var a_tro1 = parseFloat(Math.abs(a_tro));
+
+            var wynik_pole = 0;
+
+            var wynik_obwod = 0;
+
+            wynik_pole = parseFloat(((a+b)*h)/2);
+
+            var c = parseFloat(Math.sqrt((a_tro1 * a_tro1) + (h * h)));
+
+            wynik_obwod = parseFloat(a + b + (c*2));
+
+            document.write("Obwod = " +wynik_obwod);
+            document.write("<br>a trojkata a = " +a_tro);
+            document.write("<br>a trojkata |a| = " +a_tro1);
+            document.write("<br>C = " +c);
+            document.write("<br>h = " +h);
+            document.write("<br>b = " +b);
+            document.write("<br>a = " +a);
+            document.write("<br>Pole = " +wynik_pole);
+
+
+
+        }
+    </script>
+</head> 
+<body>
+    <input type="button" onclick="PoleiObwod()" value="Oblicz Pole">
+
+</body> 
+</html>
