@@ -1,0 +1,30 @@
+<html> 
+<head> 
+<title>
+  Przykład obliczenia V  i  Pc walca
+</title>
+    <script language="JavaScript">
+        function PoleiObwod()
+        {
+            var a = prompt("Podaj bok a: ");
+            var b = prompt("Podaj bok b: ");
+
+            var wynik_pole = 0;
+            wynik_pole = a * b;
+
+            var wynik_obwod = 0;
+            wynik_obwod = (a*2) + (b*2);
+
+            document.write("Bok a = " +a+ " <br>Bok b = " +b);
+
+            document.write("<br>Wynik Obwodu = " + wynik_obwod);
+
+            document.write("<br>Wynik Pola = " + wynik_pole);
+        }
+    </script>
+</head> 
+<body>
+    <input type="button" onclick="PoleiObwod()" value="Oblicz Pole">
+
+</body> 
+</html>
