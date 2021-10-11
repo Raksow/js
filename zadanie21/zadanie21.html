@@ -1,0 +1,31 @@
+<html> 
+<head> 
+<title>
+  Przykład
+</title>
+    <script language="JavaScript">
+        function PoleiObwod()
+        {
+            var a = prompt("Podaj wysokosc oparcia drabiny : ");
+            var b = prompt("Podaj odleglosc oparcia drabiny : ");
+
+            a = parseInt(a);
+            b = parseInt(b);
+
+            var wynik = Math.sqrt((a*a) + (b*b));
+            var alpha = Math.atan2(a, b);
+
+            var alpha2 = 57.3 * alpha;
+
+
+            document.write("wynik = " +wynik);
+
+            document.write("<br>alpha = " +alpha2+ " Stopni");
+        }
+    </script>
+</head> 
+<body>
+    <input type="button" onclick="PoleiObwod()" value="Oblicz Pole">
+
+</body> 
+</html>
