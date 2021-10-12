@@ -1,0 +1,66 @@
+<html> 
+<head> 
+<title>
+  Przykład
+</title>
+    <script language="JavaScript">
+        function Czolg(kolor, waga, marka, rocznik, wysokosc, kraj)
+        {
+            this.kolor = kolor;
+            this.waga = waga;
+            this.marka = marka;
+            this.rocznik = rocznik;
+            this.wysokosc = wysokosc;
+            this.kraj = kraj;
+        }
+
+        function Kot(kolor, rasa, wiek, waga)
+        {
+            this.kolor = kolor;
+            this.rasa = rasa;
+            this.wiek = wiek;
+            this.waga = waga;
+        }
+
+        function wypisz()
+        {
+            tiger = new Czolg("Moro", 10000, "Tiger", 1943, 3, "GERMANY");
+            ft = new Czolg("Czarny", 8000, "FT-17", 1920, 3, "FRENCH");
+            mark = new Czolg("Brazowy", 11000, "Mark_1", 1917, 3, "GB");
+            tp = new Czolg("Czarno-brazowy", 8000, "7tp", 1936, 3, "POLISH");
+            sherman = new Czolg("Moro-czarny", 12000, "M4 Sherman", 1943, 3, "AMERICA");
+
+            sfinks = new Kot("Rozowy", "Sfinks", 3, 7);
+            syjamski = new Kot("Bialy", "Syjamski", 4, 6);
+            perski = new Kot("Bialy", "Perski", 5, 9);
+            bengalski = new Kot("Brazowo-pomaranczowy", "Bengalski", 2, 6);
+            brytyjski = new Kot("Szary", "Brytyjski-krotkowlosy", 3, 7);
+
+
+            document.write("W czołgu " +tiger.marka+ " znajduje się kot " +sfinks.rasa+ "<br><br>");
+            document.write("W czołgu " +ft.marka+ " znajduje się kot " +syjamski.rasa+ "<br><br>");
+            document.write("W czołgu " +mark.marka+ " znajduje się kot " +perski.rasa+ "<br><br>");
+            document.write("W czołgu " +tp.marka+ " znajduje się kot " +bengalski.rasa+ "<br><br>");
+            document.write("W czołgu " +sherman.marka+ " znajduje się kot " +brytyjski.rasa+ "<br><br><br><br>");
+
+
+            document.write("Kolor: " +tiger.kolor+ "<br>Waga: " +tiger.waga+ "<br>Marka: " +tiger.marka+ "<br>Rocznik: " +tiger.rocznik+ "<br>Wysokosc: " +tiger.wysokosc+ "<br>Kraj: "+tiger.kraj+ "<br><br>");
+            document.write("Kolor: " +ft.kolor+ "<br>Waga: " +ft.waga+ "<br>Marka: " +ft.marka+ "<br>Rocznik: " +ft.rocznik+ "<br>Wysokosc: " +ft.wysokosc+ "<br>Kraj: "+ft.kraj+ "<br><br>");
+            document.write("Kolor: " +mark.kolor+ "<br>Waga: " +mark.waga+ "<br>Marka: " +mark.marka+ "<br>Rocznik: " +mark.rocznik+ "<br>Wysokosc: " +mark.wysokosc+ "<br>Kraj: "+mark.kraj+ "<br><br>");
+            document.write("Kolor: " +tp.kolor+ "<br>Waga: " +tp.waga+ "<br>Marka: " +tp.marka+ "<br>Rocznik: " +tp.rocznik+ "<br>Wysokosc: " +tp.wysokosc+ "<br>Kraj: "+tp.kraj+ "<br><br>");
+            document.write("Kolor: " +sherman.kolor+ "<br>Waga: " +sherman.waga+ "<br>Marka: " +sherman.marka+ "<br>Rocznik: " +sherman.rocznik+ "<br>Wysokosc: " +sherman.wysokosc+ "<br>Kraj: "+sherman.kraj+ "<br><br><br><br>");
+
+            document.write("Kolor: " +sfinks.kolor+ "<br>Rasa: " +sfinks.rasa+ "<br>Wiek: " +sfinks.wiek+ "<br>Waga: " +sfinks.waga+ "<br><br>");
+            document.write("Kolor: " +syjamski.kolor+ "<br>Rasa: " +syjamski.rasa+ "<br>Wiek: " +syjamski.wiek+ "<br>Waga: " +syjamski.waga+ "<br><br>");
+            document.write("Kolor: " +perski.kolor+ "<br>Rasa: " +perski.rasa+ "<br>Wiek: " +perski.wiek+ "<br>Waga: " +perski.waga+ "<br><br>");
+            document.write("Kolor: " +bengalski.kolor+ "<br>Rasa: " +bengalski.rasa+ "<br>Wiek: " +bengalski.wiek+ "<br>Waga: " +bengalski.waga+ "<br><br>");
+            document.write("Kolor: " +brytyjski.kolor+ "<br>Rasa: " +brytyjski.rasa+ "<br>Wiek: " +brytyjski.wiek+ "<br>Waga: " +brytyjski.waga+ "<br><br>");
+        }
+
+    </script>
+</head> 
+<body>
+    <input type="button" onclick="wypisz()" value="CZOLG wypisz">
+
+</body> 
+</html>
