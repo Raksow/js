@@ -1,0 +1,28 @@
+<html> 
+<head> 
+<title>
+  Przykład
+</title>
+    <script language="JavaScript">
+        function Kot(nazwa, rasa, wiek)
+        {
+            this.nazwa = nazwa;
+            this.rasa = rasa;
+            this.wiek = wiek;
+
+            this.name = function()
+            {
+                document.write("Kot " +this.nazwa+ " jest rasy " +this.rasa+ " i ma " +this.wiek+ " lat.");
+            };
+        }
+
+        perski = new Kot("Puszek", "Perski", 5);
+        perski.name();
+
+
+    </script>
+</head> 
+<body>
+
+</body> 
+</html>

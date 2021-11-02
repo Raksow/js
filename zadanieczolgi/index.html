@@ -1,0 +1,55 @@
+<html> 
+<head> 
+<title>
+  Przykład
+</title>
+    <script language="JavaScript">
+        function Czolg(kolor, waga, marka, rocznik, wysokosc, kraj)
+        {
+            this.kolor = kolor;
+            this.waga = waga;
+            this.marka = marka;
+            this.rocznik = rocznik;
+            this.wysokosc = wysokosc;
+            this.kraj = kraj;
+
+            this.show = function()
+            {
+                document.write("Kolor: " +this.kolor+ "<br>Waga: " +this.waga+ "<br>Marka: " +this.marka+ "<br>Rocznik: " +this.rocznik+ "<br>Wysokosc: " +this.wysokosc+ "<br>Kraj: "+this.kraj+ "<br><br>")
+            }
+        }
+
+        function Kot(kolor, rasa, wiek, waga)
+        {
+            this.kolor = kolor;
+            this.rasa = rasa;
+            this.wiek = wiek;
+            this.waga = waga;
+
+            this.show = function()
+            {
+                document.write("Kolor: " +this.kolor+ "<br>Rasa: " +this.rasa+ "<br>Wiek: " +this.wiek+ "<br>Waga: " +this.waga+ "<br><br>");
+            }
+        }
+
+        tiger = new Czolg("Moro", 10000, "Tiger", 1943, 3, "GERMANY");
+        ft = new Czolg("Czarny", 8000, "FT-17", 1920, 3, "FRENCH");
+        mark = new Czolg("Brazowy", 11000, "Mark_1", 1917, 3, "GB");
+        tp = new Czolg("Czarno-brazowy", 8000, "7tp", 1936, 3, "POLISH");
+        sherman = new Czolg("Moro-czarny", 12000, "M4 Sherman", 1943, 3, "AMERICA");
+
+        sfinks = new Kot("Rozowy", "Sfinks", 3, 7);
+        syjamski = new Kot("Bialy", "Syjamski", 4, 6);
+        perski = new Kot("Bialy", "Perski", 5, 9);
+        bengalski = new Kot("Brazowo-pomaranczowy", "Bengalski", 2, 6);
+        brytyjski = new Kot("Szary", "Brytyjski-krotkowlosy", 3, 7);
+
+
+        tiger.show();
+
+    </script>
+</head> 
+<body>
+
+</body> 
+</html>
